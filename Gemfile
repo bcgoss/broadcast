@@ -35,16 +35,18 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'react-rails'
-
+gem 'devise'
 group :development, :test do
   gem 'rspec'
   gem 'rspec-rails'
   gem 'jasmine-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'factory_bot_rails'
 end
 
 group :development do
   gem 'capybara'
+  gem 'launchy'
   gem 'selenium-webdriver'
 
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
