@@ -1,0 +1,5 @@
+<% if flash %>
+  <% flash.each do |flash_level, message| %>
+    <%= tag.div message, class: flash_level %>
+  <% end %>
+<% end %>
