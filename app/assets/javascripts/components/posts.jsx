@@ -9,7 +9,7 @@ class Posts extends React.Component {
   }
 
   componentDidMount() {
-    fetch('http://localhost:3000/posts').
+    fetch('/posts').
       then(res => res.json()).
       then(
         (result) => {
