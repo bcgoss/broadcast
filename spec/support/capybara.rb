@@ -1,3 +1,6 @@
+require 'capybara/rails'
+require 'selenium-webdriver'
+
 Capybara.register_driver :headless_firefox do |app|
   browser_options = Selenium::WebDriver::Firefox::Options.new()
   browser_options.args << '--headless'
